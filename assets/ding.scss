@@ -228,7 +228,7 @@ li {
 }
 
 .headerphoto {
-  width: 350px;
+  width: 500px;
 }
 
 .maincontent {
@@ -242,7 +242,7 @@ li {
 
 @include media-breakpoint-up(md) {
   .maincontent {
-    max-width: 850px;
+    max-width: 975px;
   }
 }
 
