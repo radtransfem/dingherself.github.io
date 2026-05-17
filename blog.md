@@ -25,7 +25,7 @@ div.rss:hover > span {color: var(--bs-link-hover-color);}
 </button></p>
 
 {% for teaser in site.data.teasers %}
-<h2 class="mb-1" style="text-transform: none;"><span class="me-2"><a href="#">{{ teaser.title }}</a></span><small><span class="badge rounded-pill text-bg-primary px-2 me-1 align-top" style="line-height: 1.2; margin-top: 1.5pt;"><a class="link-light" href="#">{{ teaser.tag | prepend: '#' }}</a></span></small></h2>
+<h2 class="mb-1" style="text-transform: none;"><span class="me-2">{{ teaser.title }}</span><small><span class="badge rounded-pill text-bg-primary px-2 me-1 align-top" style="line-height: 1.2; margin-top: 1.5pt;"><a class="link-light" href="#">{{ teaser.tag | prepend: '#' }}</a></span></small></h2>
 <p class="mb-3"><small class="text-body-secondary" style="font-style: italic;">Forthcoming</small></p>
 <p style="margin-bottom: 1.85rem;">{{ teaser.punchline }}</p>
 {% endfor %}
