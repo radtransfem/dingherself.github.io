@@ -7,7 +7,7 @@ order: 25
 
 # Handouts
 
-- [Columbia Que(e)ry]({{ site.baseurl }}{% link handouts/ding-trans-meaning-crafting-queery-handout.pdf %})
+- [Columbia Que(e)ry 2026]({{ site.baseurl }}{% link handouts/ding-trans-meaning-crafting-queery-handout.pdf %})
 - [MAP-Penn 2026]({{ site.baseurl }}{% link handouts/ding-justice-misgendered-penn-handout.pdf %}) \[[slides]({{ site.baseurl }}{% link handouts/ding-justice-misgendered/index.html %})\]
 - [Dissertation Defense]({{ site.baseurl }}{% link handouts/ding-defense-handout.pdf %})
 - [WOGAP MIT 2025]({{ site.baseurl }}{% link handouts/ding-euthyphro-wogap-handout.pdf %})
