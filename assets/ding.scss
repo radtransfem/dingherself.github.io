@@ -195,6 +195,10 @@ $gutters: (
   * {
     --bs-primary-rgb: var(--bs-link-color-rgb);
   }
+
+  span.text-bg-primary:hover {
+    background-color: var(--bs-link-hover-color) !important;
+  }
 }
 
 nav[data-toggle="toc"] .nav .active .nav {
