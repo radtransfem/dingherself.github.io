@@ -17,6 +17,7 @@ gem "jekyll", "~> 4.4.1"
 group :jekyll_plugins do
   gem 'jekyll-sitemap', '~> 1.4.0'
   gem 'jekyll-target-blank'
+  gem 'jekyll-feed'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

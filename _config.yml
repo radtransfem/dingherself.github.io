@@ -44,6 +44,7 @@ exclude:
 plugins:
   - jekyll-sitemap
   - jekyll-target-blank
+  - jekyll-feed
 
 sass:
     sass_dir: _sass
