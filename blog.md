@@ -14,6 +14,8 @@ div.rss:hover > svg {fill: var(--bs-link-hover-color);}
 div.rss:hover > span {color: var(--bs-link-hover-color);}
 </style>
 
+<h1><img src="/assets/traffic-cone.png" width="24px" height="auto" class="img-fluid rounded" alt="traffic cone"><span class="ps-2">Blog under Construction</span></h1>
+
 <p class="mt-5 mb-5"><button type="button" class="btn btn-outline-primary btn-sm position-relative">
   Upcoming Posts
   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
