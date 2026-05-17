@@ -6,7 +6,7 @@ group: navigation
 order: 15
 ---
 
-<h1><img src="/assets/traffic-cone.png" width="24px" height="auto" class="img-fluid rounded" alt="pinned"><span class="ps-2">Blog under Construction</span></h1>
+<h1><img src="/assets/traffic-cone.png" width="24px" height="auto" class="img-fluid rounded" alt="traffic cone"><span class="ps-2">Blog under Construction</span></h1>
 
 <p></p>
 
