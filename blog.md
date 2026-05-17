@@ -6,7 +6,7 @@ group: navigation
 order: 15
 ---
 
-<h1><img src="/assets/bookshelf.png" width="24px" height="auto" class="img-fluid rounded" alt="pixelated icon of an ink bottle"><span class="ps-2">Blog</span></h1>
+<h1><img src="/assets/bookshelf.png" width="24px" height="auto" class="img-fluid rounded" alt="pixelated icon of a bookshelf"><span class="ps-2">Blog</span></h1>
 
 {%- if site.tags.pinned -%}
 {%- include posts_list.html tag = "pinned" -%}
