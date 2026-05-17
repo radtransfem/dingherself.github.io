@@ -5,7 +5,7 @@ group: navigation
 order: 25
 ---
 
-# Handouts
+<h1><img src="/assets/scroll.png" width="27px" height="auto" class="img-fluid rounded" alt="traffic cone"><span class="ps-2">Handouts</span></h1>
 
 - [Columbia Que(e)ry 2026]({{ site.baseurl }}{% link handouts/ding-trans-meaning-crafting-queery-handout.pdf %})
 - [MAP-Penn 2026]({{ site.baseurl }}{% link handouts/ding-justice-misgendered-penn-handout.pdf %}) \[[slides]({{ site.baseurl }}{% link handouts/ding-justice-misgendered/index.html %})\]
