@@ -29,7 +29,7 @@ notes = "Ripe peach, dragon fruit, star fruit, honeysuckle"
 tased = false
 cost = "$32.5/250g"
 acquisition = "in-cafe"
-recipe = "James Hoffmann’s “Better 1-Cup V60” method, grind step 2.3 on Ode 2"
+recipe = "James Hoffmann’s “Better 1-Cup V60” method, grind step 2.2 on Ode 2"
 %}
 
 mama's tomato soup
@@ -52,7 +52,7 @@ notes = "Sweet berry wine, skittles, dark chocolate"
 tased = false
 cost = "$26/283g + $5/shipping (Fellow Drops)"
 acquisition = "Fellow Drops"
-recipe = "Lance Hedrick’s “soup” method, grind step 1.3 on Ode 2"
+recipe = "Lance Hedrick’s “soup” method, grind step 1.2 on Ode 2"
 %}
 
 Fun
