@@ -5,7 +5,7 @@ group: navigation
 order: 5
 ---
 
-# Resources
+<h1><img src="/assets/lightbulb.png" width="27px" height="auto" class="img-fluid rounded" alt="pixelated icon of a lightbulb"><span class="ps-2">Resources</span></h1>
 
 - [Resources for Philosophy Students](https://resources.dingherself.com)
 - [*Being Trans in Philosophy: A Zine*](https://being.transinphilosophy.org) (co-edited with [Willow Starr](http://wstarr.org))

@@ -3,7 +3,7 @@ layout: post
 title: AY 2025 Coffee in Review
 tags:
   - coffee
-punchline: When the clock struck midnight on NYE, the last thing I expected was to be blown away by beans from a Santa Cruz roastery. What has society become?
+description: When the clock struck midnight on NYE, the last thing I expected was to be blown away by beans from a Santa Cruz roastery. What has society become?
 ---
 
 <!--

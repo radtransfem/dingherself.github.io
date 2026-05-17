@@ -11,8 +11,8 @@ layout: default
 
 <h1>{{ page.title | smartify}}</h1>
 
-{%- if page.punchline -%}
-<p style="font-size: 0.95rem;"><em>{{ page.punchline | smartify}}</em></p>
+{%- if page.description -%}
+<p style="font-size: 0.95rem;"><em>{{ page.description | smartify}}</em></p>
 {%- endif -%}
 
 {% unless page.date == nil or page.tags contains "nodate" -%}
