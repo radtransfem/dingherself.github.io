@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Make Blogs Cool Again, or: Belated Hello World!"
+title: "Make Blogs Chic Again, or: Belated Hello World!"
 tags:
   - hello-world
   - pinned

@@ -54,9 +54,16 @@ sass:
 title:              Ding
 #description:        "Ding is a feminist philosopher interested in normative, conceptual, and doctrinal questions about gender and its embodiment, with attention to medical institutions and practices, reproductive rights, race, sexuality, disability, borders, and incarceration."
 #twitter:            getbootstrap
-authors:            "Ding"
+author:            "Ding"
 image:              "https://dingherself.com/ding-card.jpeg"
 #social_logo_path:   /assets/brand/bootstrap-social-logo.png
+
+feed:
+  tags:
+    except:
+      - pinned
+  categories:
+      - blog
 
 # Custom variables
 #current_version:      4.0.0
