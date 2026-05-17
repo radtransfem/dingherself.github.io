@@ -33,7 +33,7 @@ div.rss:hover > span {color: var(--bs-link-hover-color);}
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Check back later! Nudge me if necessary!!
+        <p style="fs-4">Check back later! Nudge me if you have to!!</p>
       </div>
       <div class="modal-footer">
         <a href="https://dingherself.com/feed.xml" type="button" class="btn btn-primary btm-sm" role="button">Copy RSS Link</a>
