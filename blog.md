@@ -16,13 +16,33 @@ div.rss:hover > span {color: var(--bs-link-hover-color);}
 
 <h1><img src="/assets/traffic-cone.png" width="24px" height="auto" class="img-fluid rounded" alt="traffic cone"><span class="ps-2">Blog under Construction</span><div class="rss float-end" title="RSS" onclick="window.open('https://dingherself.com/feed.xml');"><span class="fs-6 pe-1">RSS</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1m0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1"/></svg></div></h1>
 
-<p class="mt-5 mb-5"><button type="button" class="btn btn-outline-primary btn-sm position-relative">
+<p style="margin-top: 1.25rem; margin-bottom: 1.75rem;"><button type="button" class="btn btn-outline-primary btn-sm position-relative" data-bs-toggle="modal" data-bs-target="#teaserModal">
   Upcoming Posts
   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
     3+
     <span class="visually-hidden">upcoming posts</span>
   </span>
 </button></p>
+
+<!-- Modal -->
+<div class="modal fade" id="teaserModal" tabindex="-1" aria-labelledby="teaserModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="teaserModalLabel">Surprising no one, this turned out to be more of a summer project than an end-of-semester distraction</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Check back later! Nudge me if necessary!!
+      </div>
+      <div class="modal-footer">
+        <a href="https://dingherself.com/feed.xml" type="button" class="btn btn-primary btm-sm" role="button">Copy RSS Link</a>
+        <button type="button" class="btn btn-outline-secondary btm-sm " data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 {% for teaser in site.data.teasers %}
 <h2 class="mb-1" style="text-transform: none;"><span class="me-2">{{ teaser.title }}</span><small><span class="badge rounded-pill text-bg-primary px-2 me-1 align-top" style="line-height: 1.2; margin-top: 1.5pt;"><a class="link-light" href="#">{{ teaser.tag | prepend: '#' }}</a></span></small></h2>
