@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "At long last, Introducing Noodles/麵/面/Miàn/🍜"
+title: "At Long Last, Introducing Noodles/麵/面/Miàn/🍜"
 tags:
   - recipe
 description: "Somehow <em>The Matrix</em> convinced my students that “reality is in the eye of the beholder.” Luckily even then you can trust a Sichuanese girlie how to noodle."
