@@ -1,45 +1,35 @@
 <div class="row g-4">
-  <div class="col-7">
-    <ol class="list-group list-group-flush mb-4">
-      <li class="list-group-item">
-        <div class="ms-2 me-auto">
-          <img src="/assets/potion-shop.png" width="22px" height="auto" class="img-fluid rounded" alt="icon of an adorable potion shop"><span style="padding-left: 5px; font-style: italic;">Roastery</span>
-          <div class="fw-bold" style="padding-left: 27px;"><a href="{{ include.url }}">{{ include.roastery }}</a>, {{ include.roasterylocation }}</div>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="ms-2 me-auto">
-          <img src="/assets/pin.png" width="22px" height="auto" class="img-fluid rounded" alt="pixelated icon of a push pin;" style="padding-left:2px;"><span style="padding-left: 5px; font-style: italic;">Region<span style="padding-left:3px;padding-right:3px;">/</span>Elevation</span>
-          <div class="fw-bold" style="padding-left: 29px;">{{ include.region}}<span style="padding-left:3px;padding-right:3px;">/</span>{{ include.elevation}} masl</div>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="ms-2 me-auto">
-          <img src="/assets/microscope.png" width="20px" height="auto" class="img-fluid rounded" alt="icon of a cauldron;"><span style="padding-left: 6.5px; font-style: italic;">Variety<span style="padding-left:3px;padding-right:3px;">/</span>Harvest</span>
-          <div class="fw-bold" style="padding-left: 26.5px;">{{ include.variety}}<span style="padding-left:3px;padding-right:3px;">/</span>{{ include.harvest}}</div>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="ms-2 me-auto">
-          <img src="/assets/donut.png" width="21px" height="auto" class="img-fluid rounded" alt="pixelated icon of a donut;"><span style="padding-left: 6px; font-style: italic;">Notes</span>
-          <div style="padding-left: 27px;"><span class="fw-bold" >{{ include.notes }}</span> ({%- if include.tasted == true -%}tasted{%- else -%}advertised{%- endif -%})</div>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="ms-2 me-auto">
-          <img src="/assets/price-tag.png" width="21px" height="auto" class="img-fluid rounded" alt="pixelated icon of a price tag"><span style="padding-left: 5px; font-style: italic;">Cost</span>
-          <div style="padding-left: 27px;"><span class="fw-bold" >{{ include.cost }}</span> ({{ include.acquisition }})</div>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="ms-2 me-auto">
-          <img src="/assets/cauldron.png" width="21px" height="auto" class="img-fluid rounded" alt="icon of a cauldron" style="padding-left:1px;"><span style="padding-left: 5px; font-style: italic;">Recipe</span>
-          <div class="fw-bold" style="padding-left: 27px;">{{ include.recipe }}</div>
-        </div>
-      </li>
-    </ol>
-  </div>
   <div class="col-5">
     <img src="{{ include.img }}" class="img-fluid rounded rounded">
+  </div>
+  <div class="col-7 table-responsive">
+    <table class="table table-hover">
+      <tbody>
+        <tr>
+          <th scope="row" class="pe-0" style="min-width: 30px;"><img src="/assets/potion-shop.png" width="22px" height="auto" class="img-fluid rounded" alt="icon of an adorable potion shop"></th>
+          <td class="fst-italic"><a href="{{ include.url }}">{{ include.roastery }}</a><span class="fs-6 text-body-secondary" style="margin-left: 4pt;">{{ include.roasterylocation }}</span></td>
+        </tr>
+        <tr>
+          <th scope="row" class="pe-0" style="min-width: 30px;"><img src="/assets/pin.png" width="22px" height="auto" class="img-fluid rounded" alt="pixelated icon of a push pin;" style="padding-left:2px;"></th>
+          <td class="fst-italic">{{ include.region}}<span class="fs-6 text-body-secondary" style="margin-left: 4pt;">{{ include.elevation}} masl</span></td>
+        </tr>
+        <tr>
+          <th scope="row" class="pe-0" style="min-width: 30px;"><img src="/assets/microscope.png" width="20px" height="auto" class="img-fluid rounded" alt="icon of a cauldron;"></th>
+          <td class="fst-italic">{{ include.variety}}<span class="fs-6 text-body-secondary" style="margin-left: 4pt;">{{ include.harvest}} harvest</span></td>
+        </tr>
+        <!--<tr>
+          <th scope="row" class="pe-0" style="min-width: 30px;"><img src="/assets/donut.png" width="21px" height="auto" class="img-fluid rounded me-0" alt="pixelated icon of a donut;"></th>
+          <td class="fst-italic">{{ include.notes }}<span class="fs-6 text-body-secondary" style="margin-left: 4pt;">{% if include.tasted == true -%}taseted{%- else -%}advertised{%- endif -%}</span></td>
+        </tr>-->
+        <tr>
+          <th scope="row" class="pe-0" style="min-width: 30px;"><img src="/assets/price-tag.png" width="21px" height="auto" class="img-fluid rounded" alt="pixelated icon of a price tag"></th>
+          <td class="fst-italic">{{ include.cost }}<span class="fs-6 text-body-secondary" style="margin-left: 4pt;">{{ include.acquisition }}</span></td>
+        </tr>
+        <tr>
+          <th scope="row" class="pe-0" style="min-width: 30px;"><img src="/assets/cauldron.png" width="21px" height="auto" class="img-fluid rounded" alt="icon of a cauldron" style="padding-left:1px;"></th>
+          <td class="fst-italic">{{ include.recipe }}<span class="fs-6 text-body-secondary" style="margin-left: 4pt;">grind step {{ include.grind }}</span></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
