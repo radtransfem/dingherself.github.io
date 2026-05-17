@@ -6,9 +6,10 @@ tags:
 punchline: When the clock struck midnight on NYE, the last thing I expected was to be blown away by beans from a Santa Cruz roastery. What has society become?
 ---
 
-<h2><img src="/assets/traffic-cone.png" width="24px" height="auto" class="img-fluid rounded" alt="traffic cone"><span class="ps-2">Blog under Construction</span></h2>
-
 <!--
+<h2><img src="/assets/traffic-cone.png" width="24px" height="auto" class="img-fluid rounded" alt="traffic cone"><span class="ps-2">Blog under Construction</span></h2>
+-->
+
 ## Sey Coffee
 
 I'm blessed by Brooklyn
@@ -57,4 +58,3 @@ recipe = "Lance Hedrick’s “soup” method, grind step 1.3 on Ode 2"
 Fun
 Complex
 Candy
--->
