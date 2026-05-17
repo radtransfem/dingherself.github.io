@@ -6,9 +6,10 @@ tags:
 description: When the clock struck midnight on NYE, the last thing I expected was to be blown away by beans from a Santa Cruz roastery. What has society become?
 ---
 
-<h2><img src="/assets/traffic-cone.png" width="24px" height="auto" class="img-fluid rounded" alt="traffic cone"><span class="ps-2">Blog under Construction</span></h2>
-
 <!--
+<h2><img src="/assets/traffic-cone.png" width="24px" height="auto" class="img-fluid rounded" alt="traffic cone"><span class="ps-2">Blog under Construction</span></h2>
+-->
+
 ## Sey Coffee
 
 I'm blessed by Brooklyn
@@ -28,7 +29,8 @@ notes = "Ripe peach, dragon fruit, star fruit, honeysuckle"
 tased = false
 cost = "$32.5/250g"
 acquisition = "in-cafe"
-recipe = "James Hoffmann’s “Better 1-Cup V60” method, grind step 2.3 on Ode 2"
+recipe = "James Hoffmann’s “Better 1-Cup V60” recipe"
+grind = "2.2 on Ode 2"
 %}
 
 mama's tomato soup
@@ -46,15 +48,15 @@ roasterylocation = "Santa Cruz, CA"
 region = "Santa Bárbara, Honduras"
 elevation = "1425"
 variety = "Parainema"
-harvest = "Unknown"
+harvest = "unknown"
 notes = "Sweet berry wine, skittles, dark chocolate"
 tased = false
-cost = "$26/283g + $5/shipping (Fellow Drops)"
-acquisition = "Fellow Drops"
-recipe = "Lance Hedrick’s “soup” method, grind step 1.3 on Ode 2"
+cost = "$26/283g + $5/shipping"
+acquisition = "fellow drops"
+recipe = "Lance Hedrick’s “soup” recipe"
+grind = "1.2 on Ode 2"
 %}
 
 Fun
 Complex
 Candy
--->

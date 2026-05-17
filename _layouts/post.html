@@ -6,8 +6,10 @@ layout: default
 
 {%- if page.categories %}
 {%- capture category_name -%}{{ page.categories | escape | split: ', ' | first | remove: '[&quot;' | remove: '&quot;]' }}{%- endcapture -%}
-<p style="margin-bottom: 1.75rem;"><a class="btn btn-outline-primary btn-sm d-print-none" role="button" href="{{ category_name | append: '.html' | relative_url }}"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/></svg><span class="ps-1">{{ category_name | smartify | capitalize }}</span></a></p>
+<p style="margin-bottom: 2.25rem;"><a class="btn btn-outline-primary btn-sm d-print-none" role="button" href="{{ category_name | append: '.html' | relative_url }}"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/></svg><span class="ps-1">{{ category_name | smartify | capitalize }}</span></a></p>
 {%- endif %}
+
+<p class="mb-5"><small>{%- for tag in page.tags -%}<span class="badge rounded-pill text-bg-primary px-2 me-1" style="line-height: 1.2;"><a class="text-light" href="{% link blog/tags.md %}{{ tag | prepend: '#' }}">{{ tag | prepend: '#' }}</a></span>{%- endfor -%}</small></p>
 
 <h1>{{ page.title | smartify}}</h1>
 
@@ -15,10 +17,7 @@ layout: default
 <p style="font-size: 0.95rem;"><em>{{ page.description | smartify}}</em></p>
 {%- endif -%}
 
-{% unless page.date == nil or page.tags contains "nodate" -%}
-<p class="mt-4 mb-3"><small>{%- for tag in page.tags -%}<a style="padding-right: 7px;" href="{% link blog/tags.md %}{{ tag | prepend: '#' }}">{{ tag | prepend: '#' }}</a>{%- endfor -%}</small></p>
-<p class="text-body-secondary mb-1"><small >Posted: {{ page.date | date: "%a, %b %e, %Y" }}{%- if page.updated -%}<br />Updated: {{ page.updated | date: "%a, %b %e, %Y" }}{%- endif -%}</small></p>
-{%- endunless %}
+<p class="text-body-secondary mt-5 mb-1"><small >{%- if post.author -%}{{ post.author }}{%- else -%}{{ site.author }}{%- endif -%}{%- unless page.date == nil or page.tags contains "nodate" -%}<span style="padding-left:3px;padding-right:3px;">/</span>{{ page.date | date: "%a, %b %e, %Y" }}{%- if page.updated %} (Updated: {{ page.updated | date: "%b %e, %Y" }}){%- endif -%}{%- endunless -%}</small></p>
 
 <!--
 <div class="d-grid d-lg-block d-print-none flex-wrap" style="margin-bottom: 2.25rem;">
@@ -28,6 +27,6 @@ layout: default
 
 {% include share-buttons.html %}
 
-<div style="margin-bottom: 2.25rem;"></div>
+<p class="text-body-secondary mt-1" style="margin-bottom: 2.25rem; font-size: 0.7rem;">You don’t need me to tell you this, but I write only in my personal capacity yada yada.</p>
 
 {{ content }}
