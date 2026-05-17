@@ -26,7 +26,7 @@ $body-color: #333;
 $body-color-dark: #e3ebf3;
 $black: #333;
 $white: #fff;
-$dingred: #bd000b;
+$dingred: #cc000c;
 $dingdarkred: tint-color($dingred, 43%);
 $primary: $dingred;
 
@@ -225,6 +225,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2 {
 li {
   margin-bottom: 1pt;
   line-height: 1.6;
+}
+
+li.list-group-item {
+  margin-bottom: 0pt;
+  line-height: 0.95;
+  font-size: 0.93rem;
 }
 
 .headerphoto {

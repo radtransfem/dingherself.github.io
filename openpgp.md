@@ -1,8 +1,6 @@
 ---
 layout: default
 title: OpenPGP
-permalink: /OpenPGP/
-include: false
 sitemap: true
 ---
 

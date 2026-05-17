@@ -8,7 +8,7 @@ kramdown:
   footnote_backlink: "" # do not use backlink for footnotes
 
 # Permalinks
-permalink:      pretty
+permalink:      none
 
 # Server
 source:           "."

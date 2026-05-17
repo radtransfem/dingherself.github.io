@@ -1,7 +1,6 @@
 ---
 layout: resources
 title: Resources
-permalink: /resources/
 group: navigation
 order: 5
 ---

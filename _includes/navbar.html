@@ -1,4 +1,4 @@
-    <div class="container mt-4 mb-2 mb-lg-4" style="padding-left: 1em; padding-right: 1em;">
+    <div class="container mt-4 mb-2 mb-lg-4 d-print-none" style="padding-left: 1em; padding-right: 1em;">
       <nav class="navbar navbar-expand-md">
         <a class="navbar-brand mb-0" style="font-style: italic; font-weight: 400;" href="https://dingherself.com">Ding</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation">
@@ -20,7 +20,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="{% link ding-cv.pdf %}" target="_blank">CV</a>
               </li>
-              {% if page.url == '/resources/' %}
+              {% if page.url == '/resources.html' %}
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="{% link resources.md %}">Resources
                     <span class="visually-hidden">(current)</span>
@@ -29,6 +29,28 @@
               {% else %}
                 <li class="nav-item">
                   <a class="nav-link" href="{% link resources.md %}">Resources</a>
+                </li>
+              {% endif %}
+              {% if page.url == '/blog.html' %}
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% link blog.md %}">Blog
+                    <span class="visually-hidden">(current)</span>
+                  </a>
+                </li>
+              {% else %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% link blog.md %}">Blog</a>
+                </li>
+              {% endif %}
+              {% if page.url == '/handouts.html' %}
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% link handouts.md %}">Resources
+                    <span class="visually-hidden">(current)</span>
+                  </a>
+                </li>
+              {% else %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% link handout.md %}">Handouts</a>
                 </li>
               {% endif %}
                 <li class="nav-item dropdown">

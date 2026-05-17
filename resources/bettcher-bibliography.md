@@ -1,11 +1,8 @@
 ---
-layout: default
+layout: post
 title: Bettcher Bibliography
-permalink: /resources/bettcher-bibliography/
-include: false
+categories: resources
 ---
-
-# Bettcher Bibliography
 
 *I compiled this bibliography of Prof. Talia Mae Bettcher’s work (including some spoken word performances that I came across in my research) for a reading group that I organized in 2022. To me, reading Bettcher systematically has been enormously helpful in understanding and appreciating her work, and I wish more trans/feminist philosophers could have the delight (as well as luxury) of doing the same.*
 
