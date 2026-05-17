@@ -166,6 +166,7 @@ $gutters: (
 // 8. Add additional custom code here
 
 [data-bs-theme="dark"] {
+
   .navbar {
     --bs-navbar-color: $body-color-dark;
     --bs-navbar-hover-color: #{shift-color($body-color-dark, -100%)};
@@ -189,6 +190,10 @@ $gutters: (
     --bs-btn-active-shadow: inset 0 3px 5px rgba(227, 235, 243, 0.875);
     --bs-btn-disabled-color: #{$dingdarkred};
     --bs-btn-disabled-border-color: #{$dingdarkred};
+  }
+
+  * {
+    --bs-primary-rgb: var(--bs-link-color-rgb);
   }
 }
 
