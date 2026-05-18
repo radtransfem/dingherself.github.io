@@ -17,7 +17,10 @@ layout: default
 <p style="font-size: 0.95rem;"><em>{{ page.description | smartify}}</em></p>
 {%- endif -%}
 
-<p class="text-body-secondary mt-5 mb-1"><small >{%- if post.author -%}{{ post.author }}{%- else -%}{{ site.author }}{%- endif -%}{%- unless page.date == nil or page.tags contains "nodate" -%}<span style="padding-left:3px;padding-right:3px;">/</span>{{ page.date | date: "%a, %b %e, %Y" }}{%- if page.updated %} (Updated: {{ page.updated | date: "%b %e, %Y" }}){%- endif -%}{%- endunless -%}</small></p>
+{%- unless page.date == nil or page.tags contains "nodate" -%}
+<p class="text-body-secondary mb-1" style="margin-top: 1.625rem;"><small>Posted {{ page.date | date: "%A, %B %e, %Y" }}</small></p>
+<p class="text-body-secondary mb-2"><small>{%- if page.updated %}Updated {{ page.updated | date: "%A, %B %e, %Y" }}</span>{%- endif -%}</small></p>
+{%- endunless -%}
 
 <!--
 <div class="d-grid d-lg-block d-print-none flex-wrap" style="margin-bottom: 2.25rem;">
