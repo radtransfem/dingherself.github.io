@@ -217,6 +217,10 @@ $gutters: (
   * {
     --bs-primary-rgb: var(--bs-link-color-rgb);
   }
+
+  .accordion-button {
+    --bs-accordion-active-color: #{$body-color-dark};
+  }
 }
 
 nav[data-toggle="toc"] .nav .active .nav {
