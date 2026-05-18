@@ -179,6 +179,21 @@ $gutters: (
     color: #{$dingdarkred};
   }
 
+  .btn-primary {
+    --bs-btn-color: #{$body-color-dark};
+    --bs-btn-bg: #{$dingdarkred};
+    --bs-btn-border-color: #{$dingdarkred};
+    --bs-btn-hover-bg: var(--bs-link-hover-color);
+    --bs-btn-hover-border-color: var(--bs-link-hover-color);
+    --bs-btn-focus-shadow-rgb: 217, 110, 116;
+    --bs-btn-active-bg: #{$dingdarkred};
+    --bs-btn-active-border-color: #{$dingdarkred};
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(227, 235, 243, 0.875);
+    --bs-btn-disabled-color: #{$body-color-dark};
+    --bs-btn-disabled-bg: #{$dingdarkred};
+    --bs-btn-disabled-border-color: #{$dingdarkred};
+  }
+
   .btn-outline-primary {
     --bs-btn-color: #{$dingdarkred};
     --bs-btn-border-color: #{$dingdarkred};
@@ -190,6 +205,13 @@ $gutters: (
     --bs-btn-active-shadow: inset 0 3px 5px rgba(227, 235, 243, 0.875);
     --bs-btn-disabled-color: #{$dingdarkred};
     --bs-btn-disabled-border-color: #{$dingdarkred};
+  }
+
+  .btn-outline-secondary {
+    --bs-btn-color: #{$body-color-dark};
+    --bs-btn-border-color: #{$body-color-dark};
+    --bs-btn-hover-bg: shift-color($body-color-dark, 100%);
+    --bs-btn-hover-border-color: shift-color($body-color-dark, 100%);
   }
 
   * {
