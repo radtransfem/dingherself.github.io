@@ -257,6 +257,31 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2 {
   margin-top: 0.625rem;
 }
 
+.latex {
+  font-size: 0.95rem;
+}
+
+.sc {
+  font-size: 0.87rem;
+}
+
+.latex span:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  vertical-align: 0.28em;
+  margin-left: -0.48em;
+  margin-right: -0.15em;
+  line-height: 1ex;
+}
+
+.latex span:nth-child(2) {
+  text-transform: uppercase;
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+  line-height: 1ex;
+}
+
 li {
   margin-bottom: 1pt;
   line-height: 1.6;
