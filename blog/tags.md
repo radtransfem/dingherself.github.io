@@ -6,6 +6,11 @@ title:  "Tags"
 
 <h1>Tags</h1>
 
+{% unless site.categories.blog %}
+<script>window.location="/blog";</script>
+<a href="/blog">Redirecting...</a>
+{% endunless %}
+
 {% for tag in site.tags %}
   <h2 id="{{ tag[0] }}">{{ tag[0] | prepend: '#' }}</h2>
   <ul>
