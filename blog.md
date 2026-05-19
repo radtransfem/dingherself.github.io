@@ -25,7 +25,7 @@ div.rss:hover > span {color: var(--bs-link-hover-color);}
 <p style="margin-top: 1.25rem; margin-bottom: 1.75rem;"><button type="button" class="btn btn-outline-primary btn-sm position-relative" data-bs-toggle="modal" data-bs-target="#teaserModal">
   Upcoming Posts
   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    3+
+    4+
     <span class="visually-hidden">upcoming posts</span>
   </span>
 </button></p>
