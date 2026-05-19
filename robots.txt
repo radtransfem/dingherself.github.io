@@ -1,45 +1,14 @@
 User-agent: *
 Disallow: /handout
 Disallow: /handout/
-Disallow: /handouts
-Disallow: /handouts/
-Disallow: /teaching/ding-teaching-evaluations.pdf
-Disallow: /teaching/evaluations
-Disallow: /teaching/evaluations/
 Disallow: /playlist/130
 Disallow: /playlist/130/
 Disallow: /s/
+Disallow: /jobs/
+Disallow: /jobs
+Disallow: /print/
+Disallow: /print
 Sitemap: https://dingherself.com/sitemap.xml
-
-User-agent: Twitterbot
-Allow: /handout
-Allow: /handout/
-Allow: /handouts
-Allow: /handouts/
-
-User-agent: TelegramBot
-Allow: /handout
-Allow: /handout/
-Allow: /handouts
-Allow: /handouts/
-
-User-agent: LinkedInBot
-Allow: /handout
-Allow: /handout/
-Allow: /handouts
-Allow: /handouts/
-
-User-agent: Discordbot
-Allow: /handout
-Allow: /handout/
-Allow: /handouts
-Allow: /handouts/
-
-User-agent: Applebot
-Allow: /handout
-Allow: /handout/
-Allow: /handouts
-Allow: /handouts/
 
 User-agent: GPTBot
 Disallow: /
