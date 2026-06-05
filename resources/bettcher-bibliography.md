@@ -8,19 +8,8 @@ categories: resources
 
 *[07/11/24: Added new publications and old syllabi; all items are now linked.]*
 
-<p style="text-align: center; padding-top: 0.25em; margin-bottom: -0.25em;">&#42;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&#42;</p>
-
-## Table of Contents
-
-  1. [Publications: History of Philosophy](#history-of-philosophy)
-  2. [Publications: Trans Feminism](#trans-feminism)
-  3. [Autobiography](#autobiography)
-  4. [Interviews](#interviews)
-  6. [Various Other Items of Interest](#various-other-items-of-interest)
-
-<p style="text-align: center; padding-top: 0.25em; margin-bottom: -0.25em;">&#42;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&#42;</p>
-
 ## Publications
+{: .mt-5 }
 
 ### History of Philosophy
 

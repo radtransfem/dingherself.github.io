@@ -113,6 +113,9 @@ $gutters: (
   10: $spacer * 5,
 );
 
+$alert-padding-y:  $spacer * .875;
+$alert-padding-x:  $spacer * .875;
+
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "variables";
 @import "variables-dark";

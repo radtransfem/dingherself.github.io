@@ -8,17 +8,8 @@ categories: resources
 
 *\[5/21/23: I decided to remove the “crisis resources” section following disturbing reports of unwanted police intervention and forced psychiatric detention of suicide hotline callers. See, e.g., [this](https://www.madinamerica.com/2023/05/psychiatric-detentions-rise-988/) and [this](https://www.vice.com/en/article/g5vq97/988-national-suicide-prevention-lifeline-not-cop-free).\]*
 
-<p style="text-align: center; padding-top: 0.25em; margin-bottom: -0.25em;">&#42;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&#42;</p>
-
-## Table of Contents
-
- 1. [Respect, Support, and Care for One Another](#1-respect-support-and-care-for-one-another)
- 2. [Student Support Resources](#2-student-support-resources)
- 3. [(Lack of) Diversity in Philosophy](#3-lack-of-diversity-in-philosophy)
-
-<p style="text-align: center; padding-top: 0.25em; margin-bottom: -0.25em;">&#42;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&#42;</p>
-
 ## 1. Respect, Support, and Care for One Another
+{: .mt-5 }
 
 ### Materials in this course
 

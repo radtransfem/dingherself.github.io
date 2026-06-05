@@ -1,35 +1,91 @@
----
-layout: default
----
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" data-bs-theme="dark">
+  <head>
+{% include meta.html %}
 
-<p class="d-none d-print-flex">Ding (<a href="{{ page.url }}">{{ site.url }}{{ page.url }}</a>)</p>
+{% include title.html %}
 
-{%- if page.categories %}
-{%- capture category_name -%}{{ page.categories | escape | split: ', ' | first | remove: '[&quot;' | remove: '&quot;]' }}{%- endcapture -%}
-<p style="margin-bottom: 2.25rem;"><a class="btn btn-outline-primary btn-sm d-print-none" role="button" href="{{ category_name | append: '.html' | relative_url }}"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/></svg><span class="ps-1">{{ category_name | smartify | capitalize }}</span></a></p>
-{%- endif %}
+{% include css.html %}
+    <link href="{{ 'assets/bootstrap-toc.min.css' | relative_url }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script> 
+    <script src="{{ 'assets/bootstrap-toc.min.js' | relative_url }}"></script>
 
-<p class="mb-5"><small>{%- for tag in page.tags -%}<span class="badge rounded-pill text-bg-primary px-2 me-1" style="line-height: 1.2;"><a class="text-light" href="{% link blog/tags.md %}{{ tag | prepend: '#' }}">{{ tag | prepend: '#' }}</a></span>{%- endfor -%}</small></p>
+{% include favicons.html %}
 
-<h1>{{ page.title | smartify}}</h1>
+{% include open-graph.html %}
+  </head>
+  <body>
+{% include navbar.html %}
 
-{%- if page.description -%}
-<p style="font-size: 0.95rem;"><em>{{ page.description | smartify}}</em></p>
-{%- endif -%}
+    <main id="content" role="main" class="container" style="padding-bottom: 3rem;">
+      <div class="container maincontent">
+        <div class="row justify-content-center align-items-start gx-5 mt-2">
+          <div class="col-12 col-md-11">
+            <p class="d-none d-print-flex">Ding (<a href="{{ page.url }}">{{ site.url }}{{ page.url }}</a>)</p>
 
-{%- unless page.date == nil or page.tags contains "nodate" -%}
-<p class="text-body-secondary mb-1" style="margin-top: 1.625rem;"><small>Posted {{ page.date | date: "%A, %B %e, %Y" }}</small></p>
-<p class="text-body-secondary mb-2"><small>{%- if page.updated %}Updated {{ page.updated | date: "%A, %B %e, %Y" }}</span>{%- endif -%}</small></p>
-{%- endunless -%}
+            {%- if page.categories %}
+            {%- capture category_name -%}{{ page.categories | escape | split: ', ' | first | remove: '[&quot;' | remove: '&quot;]' }}{%- endcapture -%}
+            <p style="margin-bottom: 2.25rem;"><a class="btn btn-outline-primary btn-sm d-print-none" role="button" href="{{ category_name | append: '.html' | relative_url }}"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/></svg><span class="ps-1">{{ category_name | smartify | capitalize }}</span></a></p>
+            {%- endif %}
 
-<!--
-<div class="d-grid d-lg-block d-print-none flex-wrap" style="margin-bottom: 2.25rem;">
-  <button class="btn btn-outline-primary btn-sm" type="button" onClick="window.print()"><span>print this page</span></button>
-</div>
--->
+            <p class="mb-5"><small>{%- for tag in page.tags -%}<span class="badge rounded-pill text-bg-primary px-2 me-1" style="line-height: 1.2;"><a class="text-light" href="{% link blog/tags.md %}{{ tag | prepend: '#' }}">{{ tag | prepend: '#' }}</a></span>{%- endfor -%}</small></p>
 
-{% include share-buttons.html %}
+            <h1>{{ page.title | smartify}}</h1>
 
-<p class="text-body-secondary mt-1" style="margin-bottom: 2.25rem; font-size: 0.7rem;">You don’t need me to tell you this, but I write only in my personal capacity yada yada.</p>
+            {%- if page.description -%}
+            <p style="font-size: 0.95rem;"><em>{{ page.description | smartify}}</em></p>
+            {%- endif -%}
 
-{{ content }}
+            {%- unless page.date == nil or page.tags contains "nodate" -%}
+            <p class="text-body-secondary mb-1" style="margin-top: 1.625rem;"><small>Posted {{ page.date | date: "%A, %B %e, %Y" }}</small></p>
+            <p class="text-body-secondary mb-2"><small>{%- if page.updated %}Updated {{ page.updated | date: "%A, %B %e, %Y" }}</span>{%- endif -%}</small></p>
+            {%- endunless -%}
+
+            <!--
+            <div class="d-grid d-lg-block d-print-none flex-wrap" style="margin-bottom: 2.25rem;">
+              <button class="btn btn-outline-primary btn-sm" type="button" onClick="window.print()"><span>print this page</span></button>
+            </div>
+            -->
+
+            {% include share-buttons.html %}
+
+            <p class="text-body-secondary mt-1" style="font-size: 0.7rem;">You don’t need me to tell you this, but I write only in my personal capacity yada yada.</p>
+
+            <div class="btn-group d-flex d-md-inline-flex d-lg-none d-print-none flex-wrap" role="group">
+              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#showtoc" aria-expanded="false" aria-controls="showtoc"><span>table of contents</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-start gx-5">
+          <div class="col-12 col-md-11 col-lg-3 sticky-top small-screen-not-sticky order-1 order-lg-5 mb-4 mb-lg-0">
+            <div class="d-lg-block d-print-block mt-5 collapse" id="showtoc">
+              <nav id="toc">
+              </nav>
+            </div>
+          </div>
+          <div class="col-12 col-md-11 col-lg-8 order-5 order-lg-1 mt-5">
+            {{ content }}
+          </div>
+        </div>
+
+    <footer class="container maincontent">
+      <div class="row justify-content-center" align-items-start gx-5 mb-5">
+      <div class="col-12">
+{% include footer.html %}
+      </div>
+      </div>
+    </footer>
+
+{% include scripts.html %}
+    <script>
+      $(function () {
+        var navSelector = "#toc";
+        var $myNav = $(navSelector);
+        Toc.init({
+          $nav: $myNav,
+          $scope: $("h2"),
+        });
+      });
+    </script>
+  </body>
+</html>
