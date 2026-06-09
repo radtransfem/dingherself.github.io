@@ -28,7 +28,7 @@ $black: #272734;
 $gray-900: #272b35;
 $white: #fafafa;
 $dingred: #dd6464;
-$dingdarkred: tint-color($dingred, 43%);
+$dingdarkred: tint-color($dingred, 27%);
 $primary: $dingred;
 
 $primary-text-emphasis-dark: $dingdarkred;
@@ -168,6 +168,11 @@ $alert-padding-x:  $spacer * .875;
 @import "utilities/api";
 
 // 8. Add additional custom code here
+
+.btn-outline-primary {
+  --bs-btn-hover-color: RGBA(var(--bs-light-rgb),var(--bs-link-opacity,1));
+  --bs-btn-active-color: RGBA(var(--bs-light-rgb),var(--bs-link-opacity,1));
+}
 
 .navbar-expand .navbar-nav .nav-link {
   display: inline;
