@@ -64,7 +64,9 @@ div.rss:hover > span {color: var(--bs-link-hover-color);}
 {%- include posts_list.html -%}
 -->
 
-<div class="fixed-bottom" style="margin-top:3rem;"><iframe align="right" width="225" height="225" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2106661458&color=%23cc000f&auto_play=true&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe></div>
+<div style="margin-bottom: 10rem;"></div>
+
+<div class="fixed-bottom"><iframe align="right" width="225" height="225" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2106661458&color=%23cc000f&auto_play=true&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe></div>
 
 <!--
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
