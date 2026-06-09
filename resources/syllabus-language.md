@@ -8,8 +8,9 @@ categories: resources
 
 *\[5/21/23: I decided to remove the “crisis resources” section following disturbing reports of unwanted police intervention and forced psychiatric detention of suicide hotline callers. See, e.g., [this](https://www.madinamerica.com/2023/05/psychiatric-detentions-rise-988/) and [this](https://www.vice.com/en/article/g5vq97/988-national-suicide-prevention-lifeline-not-cop-free).\]*
 
+<p style="text-align: center; padding-top: 0.25em; margin-bottom: 1em;">&#42;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&#42;</p>
+
 ## 1. Respect, Support, and Care for One Another
-{: .mt-5 }
 
 ### Materials in this course
 

@@ -8,8 +8,9 @@ categories: resources
 
 *[07/11/24: Added new publications and old syllabi; all items are now linked.]*
 
+<p style="text-align: center; padding-top: 0.25em; margin-bottom: 1em;">&#42;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&#42;</p>
+
 ## Publications
-{: .mt-5 }
 
 ### History of Philosophy
 
