@@ -47,18 +47,18 @@ $font-weight-normal: 500;
 $font-weight-bold: 600; 
 $headings-font-weight: 600;
 
-$font-size-base: 0.97rem;  // Assumes the browser default, typically 1rem = 16px; we change the browser default later
+$font-size-base: 0.93rem;  // Assumes the browser default, typically 1rem = 16px; we change the browser default later
 
 $lead-font-size: (
-  $font-size-base * 1.1
+  $font-size-base * 1.05
 );
 
 $h1-font-size: (
-  $font-size-base * 1.15
+  $font-size-base * 1.1
 );
 
 $h2-font-size: (
-  $font-size-base * 0.9
+  $font-size-base * 1.1
 );
 
 $h3-font-size: (
@@ -170,16 +170,15 @@ $alert-padding-x:  $spacer * .875;
 
 [data-bs-theme="dark"] {
 
-  .navbar {
-    --bs-navbar-color: $body-color-dark;
-    --bs-navbar-hover-color: #{shift-color($body-color-dark, -100%)};
-    --bs-navbar-active-color: #{$dingdarkred};
-    --bs-navbar-brand-color: $body-color-dark;
-    --bs-navbar-brand-hover-color: #{shift-color($body-color-dark, -100%)};
+  .nav {
+    --bs-nav-link-color: $body-color-dark;
+    --bs-nav-hover-color: #{shift-color($body-color-dark, -100%)};
+    --bs-nav-active-color: $body-color-dark;
+    --bs-nav-pills-link-active-color: $body-color-dark;
   }
 
-  .nav-link.active, .nav-link.show {
-    color: #{$dingdarkred};
+  .nav-link {
+    --bs-navbar-color: $body-color-dark;
   }
 
   .btn-primary {
@@ -247,13 +246,34 @@ span.text-bg-primary:hover {
   margin-bottom: 1rem;
 }
 
+//em, i, fst-italic, [style*="font-style:italic"], [style*="font-style: italic"] {
+//  font-size: 1.07rem;
+//  font-family:
+//  'Crimson Text',
+  // Safari for OS X and iOS (San Francisco)
+  //-apple-system,
+  // Chrome < 56 for OS X (San Francisco)
+  //BlinkMacSystemFont,
+  // Windows
+  //"Segoe UI",
+  // Android
+  //"Roboto",
+  // Basic web fallback
+//  "Hoefler Text", "Palatino", "Times New Roman", Times, serif,
+  //"Verdana", "Arial", sans-serif,
+  // Emoji fonts
+//  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//}
+
 h1, .h1 {
   margin-top: 0.875rem;
 }
 
 h2, .h2 {
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-family: "Baskervville SC";
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2 {
@@ -288,6 +308,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2 {
 li {
   margin-bottom: 1pt;
   line-height: 1.6;
+}
+
+li.nav-item {
+  margin-bottom: 0pt;
+  line-height: 1.2;
+  font-size: 0.93rem;
 }
 
 li.list-group-item {
