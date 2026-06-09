@@ -7,7 +7,7 @@
 // 2. Include any default variable overrides here
 
 $font-family-sans-serif:
-'Lora',
+"Lora",
 // Safari for OS X and iOS (San Francisco)
 //-apple-system,
 // Chrome < 56 for OS X (San Francisco)
@@ -25,6 +25,7 @@ $font-family-sans-serif:
 $body-color: #272734;
 $body-color-dark: #e3ebf3;
 $black: #272734;
+$gray-900: #272b35;
 $white: #fafafa;
 $dingred: #dd6464;
 $dingdarkred: tint-color($dingred, 43%);
@@ -253,6 +254,13 @@ nav[data-toggle="toc"] .nav .active .nav {
 
 .nav-link:focus-visible {
     box-shadow: none;
+}
+
+a.navbar-brand {
+  font-family: "Passions Conflict", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
 }
 
 span.text-bg-primary:hover {
