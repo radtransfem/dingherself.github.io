@@ -1,77 +1,64 @@
     <div class="container mt-4 mb-2 mb-lg-4 d-print-none" style="padding-left: 1em; padding-right: 1em;">
-      <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand mb-0" style="font-style: italic; font-weight: 400;" href="https://dingherself.com">Ding</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-              {%- if page.url == '/' %}
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% link index.html %}">Home
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              {%- else %}
-              <li class="nav-item">
-                <a class="nav-link" href="{% link index.html %}">Home</a>
-              </li>
-              {%- endif %}
-              <li class="nav-item">
-                <a class="nav-link" href="{% link ding-cv.pdf %}" target="_blank">CV</a>
-              </li>
-              {% if page.url == '/resources.html' %}
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{% link resources.md %}">Resources
-                    <span class="visually-hidden">(current)</span>
-                  </a>
-                </li>
-              {% else %}
-                <li class="nav-item">
-                  <a class="nav-link" href="{% link resources.md %}">Resources</a>
-                </li>
-              {% endif %}
-              {% if page.url == '/blog.html' %}
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{% link blog.md %}">Blog
-                    <span class="visually-hidden">(current)</span>
-                  </a>
-                </li>
-              {% else %}
-                <li class="nav-item">
-                  <a class="nav-link" href="{% link blog.md %}">Blog</a>
-                </li>
-              {% endif %}
-              {% if page.url == '/handouts.html' %}
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{% link handouts.md %}">Handouts
-                    <span class="visually-hidden">(current)</span>
-                  </a>
-                </li>
-              {% else %}
-                <li class="nav-item">
-                  <a class="nav-link" href="{% link handouts.md %}">Handouts</a>
-                </li>
-              {% endif %}
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Links</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="https://www.femphilaz.com" target="_blank" rel="noopener">FemPhilAZ</a></li>
-                    <li><a class="dropdown-item" href="https://being.transinphilosophy.org" target="_blank" rel="noopener">Being Trans in Philosophy: A Zine</a></li>
-                    <li><a class="dropdown-item" href="https://philosophy.arizona.edu/news/congratulations-philosophy-ethics-bowl-team" target="_blank" rel="noopener noreferrer">UA Ethics Bowl</a></li>
-                    <li><a class="dropdown-item" href="https://sbs.arizona.edu/news/pride-month-qa-gender-equality-and-feminism-through-philosophers-lens" target="_blank" rel="noopener noreferrer">Pride Month Interview</a></li>
-                    <li><a class="dropdown-item" href="https://blog.apaonline.org/2024/10/28/apa-member-interview-ding" target="_blank" rel="noopener noreferrer">APA Interview</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dark Theme</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#" data-bs-theme-value="dark">On</a></li>
-                    <li><a class="dropdown-item" href="#" data-bs-theme-value="light">Off</a></li>
-                    <li><a class="dropdown-item" href="#" data-bs-theme-value="auto">Auto</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand nav-underline">
+        <ul class="navbar-nav ms-4 ms-md-0 me-auto flex-wrap">
+          <li class="nav-item">
+            <span class="nav-item nav-first">
+{%- if page.url == '/' -%}
+              <a class="nav-link active" aria-current="page" href="{% link index.html %}">Home<span class="visually-hidden">(current)</span></a>
+{%- else -%}
+             <a class="nav-link" href="{% link index.html %}">Home</a>
+{%- endif -%}
+           </span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-item"><a class="nav-link" href="{% link ding-cv.pdf %}">CV</a></span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-item">
+{%- if page.url == '/resources.html' -%}
+              <a class="nav-link active" aria-current="page" href="{% link resources.md %}">Resources<span class="visually-hidden">(current)</span></a>
+{%- else -%}
+             <a class="nav-link" href="{% link resources.md %}">Resources</a>
+{%- endif -%}
+           </span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-item">
+{%- if page.url == '/blog.html' -%}
+              <a class="nav-link active" aria-current="page" href="{% link blog.md %}">Blog<span class="visually-hidden">(current)</span></a>
+{%- else -%}
+             <a class="nav-link" href="{% link blog.md %}">Blog</a>
+{%- endif -%}
+           </span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-item">
+{%- if page.url == '/handouts.html' -%}
+              <a class="nav-link active" aria-current="page" href="{% link handouts.md %}">Handouts<span class="visually-hidden">(current)</span></a>
+{%- else -%}
+             <a class="nav-link" href="{% link handouts.md %}">Handouts</a>
+{%- endif -%}
+           </span>
+          </li>
+          <li class="nav-item dropdown">
+            <span class="nav-item"></span><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Links</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.femphilaz.com" target="_blank" rel="noopener">FemPhilAZ</a></li>
+              <li><a class="dropdown-item" href="https://being.transinphilosophy.org" target="_blank" rel="noopener">Being Trans in Philosophy: A Zine</a></li>
+              <li><a class="dropdown-item" href="https://philosophy.arizona.edu/news/congratulations-philosophy-ethics-bowl-team" target="_blank" rel="noopener noreferrer">UA Ethics Bowl</a></li>
+              <li><a class="dropdown-item" href="https://sbs.arizona.edu/news/pride-month-qa-gender-equality-and-feminism-through-philosophers-lens" target="_blank" rel="noopener noreferrer">Pride Month Interview</a></li>
+              <li><a class="dropdown-item" href="https://blog.apaonline.org/2024/10/28/apa-member-interview-ding" target="_blank" rel="noopener noreferrer">APA Interview</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <span class="nav-item"></span><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dark Theme</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" data-bs-theme-value="dark">On</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-theme-value="light">Off</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-theme-value="auto">Auto</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="navbar-brand pt-0 mb-0 ps-3 ps-md-0 pe-5 me-5" style="font-style: italic; font-weight: 400;" href="https://dingherself.com">Ding</a>
+      </nav>
     </div>

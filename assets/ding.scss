@@ -26,7 +26,7 @@ $body-color: #333;
 $body-color-dark: #e3ebf3;
 $black: #333;
 $white: #fff;
-$dingred: #cc000c;
+$dingred: #C65656;
 $dingdarkred: tint-color($dingred, 43%);
 $primary: $dingred;
 
@@ -168,6 +168,23 @@ $alert-padding-x:  $spacer * .875;
 
 // 8. Add additional custom code here
 
+.navbar-expand .navbar-nav .nav-link {
+  display: inline;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-bottom: 0.125rem;
+}
+
+.navbar-expand span.nav-item:not(.nav-first)::before {
+  content: "/";
+  pointer-events: none !important;
+  cursor: default;
+  color: $body-color;
+  opacity: 0.110;
+  padding-left: var(--bs-navbar-nav-link-padding-x);
+  padding-right: var(--bs-navbar-nav-link-padding-x);
+}
+
 [data-bs-theme="dark"] {
 
   .navbar {
@@ -181,6 +198,10 @@ $alert-padding-x:  $spacer * .875;
   .nav-link.active, .nav-link.show {
     color: #{$dingdarkred};
   }
+
+  a.nav-link:not(.nav-first)::before {
+    color: $body-color-dark;
+}
 
   .btn-primary {
     --bs-btn-color: #{$body-color-dark};
@@ -285,7 +306,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2 {
   line-height: 1ex;
 }
 
-li {
+li:not(.nav-item) {
   margin-bottom: 1pt;
   line-height: 1.6;
 }
@@ -296,8 +317,8 @@ li.list-group-item {
   font-size: 0.93rem;
 }
 
-em em {
-  font-style: normal;
+li.nav-item {
+  margin-bottom: 0.35rem;
 }
 
 .headerphoto {
