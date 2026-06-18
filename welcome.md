@@ -8,7 +8,7 @@ title: Welcome!!
 1. **Wifi** info on the fridge
 2. There is a **rooftop**! Feel free to bring my camping chair up.
 3. The **shower** uses a quirky "pull down" mechanism: <https://www.youtube.com/shorts/I5X8-qMbDTo>
-4. **Dyke** things to do in NYC: https://dingherself.com/resources/dyke-things (password: Nokia2780)
+4. **Dyke** things to do in NYC: <https://dingherself.com/resources/dyke-things> (password: Nokia2780)
 5. The **neighborhood**
    1. [Cordelia](https://maps.app.goo.gl/k2FMDeeUXd5UiDgv9), just across the street, is a lovely coffee shop during the day and wine bar during the night
    2. Great coffee: [Villager](https://maps.app.goo.gl/FcPDqsGdTkyqJ2CW8) and [Padmore’s](https://maps.app.goo.gl/AQtbuM6QGvsDx3wG8)
